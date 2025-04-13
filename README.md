@@ -1,36 +1,38 @@
+```
 odoo_manufacturing_project/
 │
-├── docker/                       ← (Optional) Docker setup for local development
+├── docker/                       # (Optional) Docker setup for local development
 │   ├── Dockerfile
 │   └── docker-compose.yml
 │
-├── config/                       ← Odoo configuration files
+├── config/                       # Odoo configuration files
 │   └── odoo.conf
 │
-├── addons/                       ← Custom Odoo modules
-│   ├── mrp_ai_defect_detection/ ← AI-based quality control module
-│   ├── scada_connector/         ← SCADA integration module (MQTT/REST)
-│   ├── predictive_maintenance/  ← AI predictive maintenance module
-│   └── ...                      ← Other custom modules
+├── addons/                       # Custom Odoo modules
+│   ├── mrp_ai_defect_detection/ # AI-based quality control module
+│   ├── scada_connector/         # SCADA integration module (MQTT/REST)
+│   ├── predictive_maintenance/  # AI predictive maintenance module
+│   └── ...                      # Other custom modules
 │
-├── enterprise/                  ← (Optional) Odoo Enterprise source
+├── enterprise/                  # (Optional) Odoo Enterprise source
 │   └── (Odoo Enterprise code)
 │
-├── odoo/                        ← Odoo core (from GitHub)
-│   └── ...                      ← Odoo Community source code
+├── odoo/                        # Odoo core (from GitHub)
+│   └── ...                      # Odoo Community source code
 │
-├── industry/                    ← Odoo Industry modules
-│   ├── mrp/                     ← Manufacturing Resource Planning
-│   ├── quality/                 ← Quality Management System
-│   ├── maintenance/             ← Maintenance Management
-│   └── plm/                     ← Product Lifecycle Management
+├── industry/                    # Odoo Industry modules
+│   ├── mrp/                     # Manufacturing Resource Planning
+│   ├── quality/                 # Quality Management System
+│   ├── maintenance/             # Maintenance Management
+│   └── plm/                     # Product Lifecycle Management
 │
-├── iotbox/                      ← (Optional) IoT device integration
-│   └── ...                      ← IoT Box configurations
+├── iotbox/                      # (Optional) IoT device integration
+│   └── ...                      # IoT Box configurations
 │
-├── requirements.txt             ← Python dependencies
-├── README.md                    ← Project documentation
-└── start.sh                     ← Local startup script
+├── requirements.txt             # Python dependencies
+├── README.md                    # Project documentation
+└── start.sh                     # Local startup script
+```
 
 # Odoo Manufacturing Project: AI-Driven Smart Factory Integration
 
