@@ -8,10 +8,45 @@ odoo_manufacturing_project/
 ├── config/                       # Odoo configuration files
 │   └── odoo.conf
 │
-├── addons/                       # Custom Odoo modules
-│   ├── mrp_ai_defect_detection/ # AI-based quality control module
-│   ├── scada_connector/         # SCADA integration module (MQTT/REST)
-│   ├── predictive_maintenance/  # AI predictive maintenance module
+├── addons/
+│   ├── mrp_ai_defect_detection/   # AI Quality Control
+│   ├── scada_connector/           # SCADA Integration
+│   ├── predictive_maintenance/    # Predictive Maintenance
+│   ├── employee_gps_tracking/     # [NEW] GPS Tracking Karyawan
+│   │   ├── models/
+│   │   │   ├── employee_tracking.py
+│   │   │   └── performance_analysis.py
+│   │   └── views/
+│   │       └── gps_dashboard.xml
+│   │
+│   ├── raw_material_management/   # [NEW] Sistem Gudang Bahan Baku
+│   │   ├── models/
+│   │   │   ├── material_stock.py
+│   │   │   └── supplier_management.py
+│   │   └── views/
+│   │       └── material_warehouse.xml
+│   │
+│   ├── procurement_system/        # [NEW] Sistem Pembelian Bahan Baku
+│   │   ├── models/
+│   │   │   ├── purchase_optimization.py
+│   │   │   └── vendor_rating.py
+│   │   └── views/
+│   │       └── procurement_dashboard.xml
+│   │
+│   ├── finished_goods_warehouse/  # [NEW] Gudang Hasil Produksi
+│   │   ├── models/
+│   │   │   ├── production_stock.py
+│   │   │   └── quality_check.py
+│   │   └── views/
+│   │       └── finished_goods.xml
+│   │
+│   ├── production_transport/      # [NEW] Sistem Transportasi Hasil Produksi
+│   │    ├── models/
+│   │   │   ├── fleet_management.py
+│   │   │   └── delivery_optimization.py
+│   │   └── views/
+│   │       └── transport_schedule.xml
+│   │
 │   └── ...                      # Other custom modules
 │
 ├── enterprise/                  # (Optional) Odoo Enterprise source
