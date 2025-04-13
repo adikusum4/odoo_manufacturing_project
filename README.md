@@ -1,39 +1,36 @@
-# odoo_manufacturing_project
-AI-Driven Smart Factory Integration. A modular Odoo setup tailored for modern manufacturing, featuring AI-powered quality control (defect detection), predictive maintenance, SCADA/MQTT integration, and IoT connectivity. Includes custom modules, industry-specific configurations, and Docker support for scalable deployment
-
 odoo_manufacturing_project/
 │
 ├── docker/                       ← (Optional) Docker setup for local development
 │   ├── Dockerfile
 │   └── docker-compose.yml
 │
-├── config/                       ← Odoo config files (e.g., odoo.conf)
+├── config/                       ← Odoo configuration files
 │   └── odoo.conf
 │
-├── addons/                       ← Custom add-ons kamu disimpan di sini
-│   ├── mrp_ai_defect_detection/ ← AI-based quality control module (custom)
-│   ├── scada_connector/         ← Modul integrasi data dari SCADA (misal via MQTT/REST)
-│   ├── predictive_maintenance/  ← Modul AI untuk perawatan prediktif
-│   └── ...                      ← Modul lainnya sesuai kebutuhan pabrik
+├── addons/                       ← Custom Odoo modules
+│   ├── mrp_ai_defect_detection/ ← AI-based quality control module
+│   ├── scada_connector/         ← SCADA integration module (MQTT/REST)
+│   ├── predictive_maintenance/  ← AI predictive maintenance module
+│   └── ...                      ← Other custom modules
 │
-├── enterprise/                  ← (Jika pakai Odoo Enterprise)
-│   └── (copy dari Odoo Enterprise source)
+├── enterprise/                  ← (Optional) Odoo Enterprise source
+│   └── (Odoo Enterprise code)
 │
-├── odoo/                        ← Odoo core (dari https://github.com/odoo/odoo)
-│   └── ...
+├── odoo/                        ← Odoo core (from GitHub)
+│   └── ...                      ← Odoo Community source code
 │
-├── industry/                    ← Odoo Industry modules (dari https://github.com/odoo/industry)
-│   └── mrp/
-│   └── quality/
-│   └── maintenance/
-│   └── plm/
+├── industry/                    ← Odoo Industry modules
+│   ├── mrp/                     ← Manufacturing Resource Planning
+│   ├── quality/                 ← Quality Management System
+│   ├── maintenance/             ← Maintenance Management
+│   └── plm/                     ← Product Lifecycle Management
 │
-├── iotbox/                      ← Optional, untuk integrasi perangkat IoT langsung
-│   └── ...
+├── iotbox/                      ← (Optional) IoT device integration
+│   └── ...                      ← IoT Box configurations
 │
-├── requirements.txt             ← Tambahan Python dependencies
-├── README.md
-└── start.sh                     ← Skrip untuk menjalankan Odoo secara lokal
+├── requirements.txt             ← Python dependencies
+├── README.md                    ← Project documentation
+└── start.sh                     ← Local startup script
 
 # Odoo Manufacturing Project: AI-Driven Smart Factory Integration
 
